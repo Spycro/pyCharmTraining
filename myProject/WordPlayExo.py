@@ -1,5 +1,6 @@
-"""think python 2e Word play case study ex 7 - 9"""
-"""Author : Lucas Zimmermann"""
+"""think python 2e Word play case study ex 7 - 9
+Author : Lucas Zimmermann
+"""
 
 
 def double(word):
@@ -40,7 +41,7 @@ def is_palindrome(word):
 
 
 def check_miles():
-    for i in range(100000, 600000):
+    for i in range(100000, 999996):
         a = str(i)[2:]
         if is_palindrome(a):
             c = i+1

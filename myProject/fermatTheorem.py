@@ -13,3 +13,4 @@ c = int(input("c"))
 n = int(input("n"))
 
 check_fermat(a,b,c,n)
+
