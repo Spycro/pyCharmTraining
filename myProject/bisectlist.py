@@ -45,5 +45,5 @@ def interlock_search():
             return None
     print(answer)
 
-
-interlock_search()
+if __name__ == '__main__':
+    interlock_search()
