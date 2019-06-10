@@ -56,8 +56,18 @@ def invert_dict_rewrited(d):
     return inverse
 
 
+def has_duplicate_dict(alist):
+    d = dict()
+    for item in alist:
+        d[item] = d.get(item, 0) + 1
+    for c in d:
+        if d.get(c) >= 2:
+            return True
+    return False
+
+
 if __name__ == '__main__':
     d = histograms_rewrited("troncature")
-    print_hist(d)
-    print(invert_dict(d))
-    print(invert_dict_rewrited(d))
+
+    my_list = (4,3,5,6,7,8,9,1,2)
+    print(has_duplicate_dict(my_list))
