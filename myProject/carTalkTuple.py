@@ -48,7 +48,8 @@ def find_reducible_word(d):
     return l
 
 
-word_dict = _make_word_list()
-word_dict_test = {"print" : None, "prit" : None, "prt" : None, "pt" : None, "p" : None, "trastbourg": None, "":None }
-my_list = find_reducible_word(word_dict)
-print(my_list[0][1])
+if __name__ == '__main__':
+    word_dict = _make_word_list()
+    word_dict_test = {"print" : None, "prit" : None, "prt" : None, "pt" : None, "p" : None, "trastbourg": None, "":None }
+    my_list = find_reducible_word(word_dict)
+    print(my_list[0][1])
